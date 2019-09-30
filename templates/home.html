@@ -3,14 +3,14 @@
 {% block body %}
 <div class="main_content">
 				<div class="main_title_container d-flex flex-column align-items-start justify-content-end">
-					<div class="main_subtitle">HTML5 &amp; CSS Developer</div>
-					<div class="main_title">Jeremy Smith</div>
+					<div class="main_subtitle">{{data['Developer']}}</div>
+					<div class="main_title">{{data['Nombre Corto']}}</div>
 				</div>
 				<div class="main_content_scroll mCustomScrollbar _mCS_2 mCS-autoHide" data-mcs-theme="minimal-dark" style="overflow: visible;"><div id="mCSB_2" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" tabindex="0" style="max-height: none;"><div id="mCSB_2_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
 					<div class="about_content">
-						<div class="about_title">Description</div>
+						<div class="about_title">Descripcion</div>
 						<div class="about_text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae sapien porttitor, dignissim quam sit amet, aliquam lorem. Fusce id ligula non risus mollis consectetur. Nam lobortis, erat quis pulvinar dignissim, velit ligula ullamcorper ipsum, at sodales elit odio at velit. Sed a est a quam mattis suscipit. Proin et faucibus diam.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae sapien porttitor, dignissim quam sit amet, aliquam lorem. Fusce id ligula non risus mollis consectetur. Nam lobortis, erat quis pulvinar dignissim, velit ligula ullamcorper ipsum, at sodales elit odio at velit. Sed a est a quam mattis suscipit.</p>
+							<p>{{data['About']['Descripcion']}}</p>
 						</div>
 
 						<!-- Loaders -->
