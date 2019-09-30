@@ -7,13 +7,13 @@ environment = os.getenv("ENVIRONMENT", "development")
 
 
 with open('info.yml') as f:
-    data = yaml.load(f, Loader=yaml.FullLoader)
+    Data = yaml.load(f, Loader=yaml.FullLoader)
 
 
 
 @app.route("/")
 def home():
-    return render_template("home.html", developer=developer)
+    return render_template("home.html", developer=developer, data=Data)
 
 @app.route("/academica")
 def academica():

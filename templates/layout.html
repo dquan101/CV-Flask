@@ -4,19 +4,36 @@
   <head>
     <meta charset="utf-8">
     <title>CV-Flask</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <link href="{{ url_for('static', filename='font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='jquery.mCustomScrollbar.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main_styles.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='responsive.css') }}">
   </head>
   <body>
     <!-- JINJA2 -->
-    {% include 'includes/_navbar.html' %}
+    {% include 'includes/_header.html' %}
+    {% include 'includes/_menu.html' %}
+    {% include 'includes/_info.html' %}
     <div class="container">
         {% block body %}{% endblock %}
     </div>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="//cdn.ckeditor.com/4.6.2/basic/ckeditor.js"></script>
-    <script type="text/javascript">
-      CKEDITOR.replace('editor')
+    <script src="{{ url_for('static', filename='jquery.mCustomScrollbar.css') }}"></script>
+    <script src="{{ url_for('static', filename='popper.js') }}"></script>
+    <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='TweenMax.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='TimelineMax.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='ScrollMagic.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='animation.gsap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='ScrollToPlugin.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='progressbar.js') }}"></script>
+    <script src="{{ url_for('static', filename='jquery.mCustomScrollbar.js') }}"></script>
+    <script src="{{ url_for('static', filename='easing.js') }}"></script>
+    <script src="{{ url_for('static', filename='parallax.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='custom.js') }}"></script>
     </script>
   </body>
 </html>
