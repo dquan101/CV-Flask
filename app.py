@@ -17,11 +17,11 @@ def home():
 
 @app.route("/academica")
 def academica():
-    return render_template("academica.html", developer=developer)
+    return render_template("academica.html", developer=developer, data=Data)
 
 @app.route("/laboral")
 def laboral():
-    return render_template("laboral.html", developer=developer)
+    return render_template("laboral.html", developer=developer, data=Data)
 
 if __name__=="__main__":
     debug=True
